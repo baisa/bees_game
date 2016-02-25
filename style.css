@@ -1,7 +1,14 @@
-.back{
-  background-color: white;
-  height: 500px;
-  width: 500px;
+.main{
+  display: flex;
+}
+.drawing{
+  background-image: url("https://pixabay.com/static/uploads/photo/2012/04/13/12/43/country-32248_960_720.png");
+  height: 680px;
+  width: 900px;
+}
+.question{
+  position: relative;
+  left:10px;
 }
 .first{
   position: absolute;
@@ -27,3 +34,4 @@
   top: 240px;
   left: 260px;
 }
+
