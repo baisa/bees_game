@@ -1,19 +1,22 @@
-var bees = [ [1],[1,2],[1,2,3], [1,2,3,4] ]
+var number = (Math.floor(Math.random() * (11 - 1)) + 1);
+var array = [];
 
-for (i = 0; i < bees.length; i++) { 
-    console.log( bees[i]);
+function newImage() {
+  var image = new Image();
+  image.src='http://www.clker.com/cliparts/V/y/D/s/5/v/bee-hi.png';
+  document.getElementById("drawing").appendChild(image);
 }
 
+for (i = 0; i < number; i++) { 
+    var image = newImage();
+    array.push(image);
+}
 
-var session = bees[Math.floor(Math.random()*bees.length)];
-console.log(session);
-
-console.log("How many bees do you see?")
 
 function myFunction() {
     var x = document.getElementById("fname").value;
     var n = Number(x);
-    if (n == session.length) {
+    if (n == array.length) {
     answer ="Correct!";
     } else {
     answer = "Try again!";
