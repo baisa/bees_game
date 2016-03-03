@@ -3,8 +3,6 @@
   <head>
     <title>Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
   </head>
   <body>
     <div class="main">
@@ -19,9 +17,20 @@
         <input type="button" onclick="myFunction()" value="Submit">
 
         <h4 id="demo"></h4>
-        <button onclick="imageFunction()">images</button>
-        <p id="demodemo"></p>
+  
+        <button onclick="setup()">Play again</button>
+       
+        <div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="1">1</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="2">2</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="3">3</button></div>
+          <div></div>
+        </div>
+<h4 id="demo1">cc</h4>
       </div>
     </div>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
