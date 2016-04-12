@@ -6,30 +6,31 @@
   </head>
   <body>
     <div class="main">
-      <div id="drawing">
- 
-      </div>
-
-      <div class="question">
-        <h3> How many bees do you see? </h3>
-
-        <input type="text" id="fname"><br>
-        <input type="button" onclick="myFunction()" value="Submit">
-
-        <h4 id="demo"></h4>
-  
-        <button onclick="setup()">Play again</button>
-       
-        <div>
+      <div id="drawing"></div>
+      <div id="answer-box">
           <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="1">1</button></div>
           <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="2">2</button></div>
           <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="3">3</button></div>
-          <div></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="4">4</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="5">5</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="6">6</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="7">7</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="8">8</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="9">9</button></div>
+          <div class="circle"> <button onclick="checkFunction()" class="given_answer" value="10">10</button></div>
         </div>
-<h4 id="demo1">cc</h4>
-      </div>
-    </div>
+        <div class="question">
+          <h3> How many bees do you see? </h3>
 
+          <input type="text" id="fname"><br>
+          <input type="button" onclick="myFunction()" value="Submit">
+
+          <h4 id="demo"></h4>
+    
+          <button onclick="setup()">Play again</button>
+          <h4 id="demo1">cc</h4>
+        </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

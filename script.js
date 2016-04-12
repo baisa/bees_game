@@ -35,12 +35,12 @@ setup();
     var elements = document.getElementsByClassName("given_answer");
     for(var i = 0, length = elements.length; i < length; i++) {
       var a = elements[i].value;
-
-  
+      console.log(a);
       var b = Number(a);
       if (b == array.length) {
-      var sss = "sss";
-      
+        sss = "Victory!";
+      } else {
+        sss = "Try";
       };
     }
     document.getElementById("demo1").innerHTML = sss;
