@@ -37,6 +37,7 @@ setup();
       var a = elements[i].value;
       console.log(a);
       var b = Number(a);
+      console.log(b);
       if (b == array.length) {
         sss = "Victory!";
       } else {
