@@ -43,8 +43,9 @@ setup();
       } else {
         sss = "Try";
       };
+      document.getElementById("demo1").innerHTML = sss;
     }
-    document.getElementById("demo1").innerHTML = sss;
+  
   };
 
 
