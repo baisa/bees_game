@@ -31,22 +31,17 @@ setup();
       document.getElementById("demo").innerHTML = answer;
   };
 
-  function checkFunction() {
-    var elements = document.getElementsByClassName("given_answer");
-    for(var i = 0, length = elements.length; i < length; i++) {
-      var a = elements[i].value;
-      console.log(a);
-      var b = Number(a);
-      console.log(b);
-      if (b == array.length) {
-        sss = "Victory!";
-      } else {
-        sss = "Try";
-      };
-      document.getElementById("demo1").innerHTML = sss;
-    }
-  
+  function checkFunction(clicked_id) {
+    
+    console.log(this);
   };
+
+var nodes = document.getElementsByClassName("circle");
+for (i = 0; i < nodes.length; i++) {
+  nodes[i].addEventListener("click", function(e){
+      console.log(e.target.id);
+  }, false);
+}
 
 
 
